@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% for job in object_list %}
+    <p>{{ job.jobtitle }}</p>
+
+{% endfor %}
+
+{% endblock content %}
